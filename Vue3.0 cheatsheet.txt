@@ -1,0 +1,31 @@
+Vue3.0 cheatsheet
+
+{{variable}}                                                             //variable referencing
+************ Directives: *************
+v-if="condition"                                                         //vue if statement
+v-else-if="condition"                                                    //vue else-if statement
+v-else="condition"                                                       //vue else statement
+v-cloak=""
+
+
+************ Events & Methods: *************
+@click="condition" || v-on:click="condition"                             //mouse click eventlistner
+@keyup.enter="method"                                                    //enter key eventlistner
+Methods:{
+    function1(){}
+    function2(){}
+}
+.prevent                                                                 //event modifier
+
+************ Components: *************
+app.component('login-form, {
+    template: `
+        <div>
+            <input type="email">
+            <input type="password">
+        <div>
+    `
+})
+
+
+************ Components Props: *************
